@@ -21,6 +21,10 @@ public class GroceryList {
         return this.items.size();
     }
 
+    public boolean hasItem(String item) {
+        return this.items.contains(item);
+    }
+
     public void clear() {
         this.items.clear();
     }
