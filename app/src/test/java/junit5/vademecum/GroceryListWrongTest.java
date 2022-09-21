@@ -5,6 +5,11 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
+/**
+ * -- WARNING --
+ * All of those tests are, for some reason, wrong.
+ * Do not take them as reference and read each javadoc carefully to understand the errors.
+ */
 public class GroceryListWrongTest {
     GroceryList groceryList;
 
