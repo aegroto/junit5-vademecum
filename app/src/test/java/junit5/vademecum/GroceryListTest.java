@@ -10,11 +10,11 @@ public class GroceryListTest {
 
     @Test
     void testItemsCount_whenOneItemIsAdded() {
-        // Arrange
+        // Setup
         groceryList = new GroceryList();
-        // Act
+        // Execute
         groceryList.addItem("Milk");
-        // Assert
+        // Verify
         assertEquals(1, groceryList.itemsCount());
     }
 
@@ -25,21 +25,21 @@ public class GroceryListTest {
      */
     @Test
     void testHasItem_withExistingItem() {
-        // Arrange
+        // Setup
         groceryList = new GroceryList();
         groceryList.addItem("Milk");
-        // Act and Assert
+        // Execute and Verify
         assertTrue(groceryList.hasItem("Milk"));
     }
 
     @Test
     void testItemsCount_whenTwoItemsAreAdded() {
-        // Arrange
+        // Setup
         groceryList = new GroceryList();
-        // Act
+        // Execute
         groceryList.addItem("Milk");
         groceryList.addItem("Bread");
-        // Assert
+        // Verify
         assertEquals(2, groceryList.itemsCount());
     }
 }
